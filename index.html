@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Connects Pictogrammers MDI v7 Webfont Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+<body>
+    <div class="gridContainer">
+        
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="mdi mdi-view-dashboard"></span>
+                <div class="dashboardText">Dashboard</div>
+            </div>
+
+            <nav class="sidebarNav">
+                <ul>
+                    <li><a href="#"><span class="mdi mdi-home"></span> Home</a></li>
+                    <li><a href="#"><span class="mdi mdi-card-account-details-outline"></span> Profile</a></li>
+                    <li><a href="#"><span class="mdi mdi-message"></span> Messages</a></li>
+                    <li><a href="#"><span class="mdi mdi-file-multiple"></span> Tasks</a></li>
+                    <li><a href="#"><span class="mdi mdi-history"></span> History</a></li>
+                    <li><a href="#"><span class="mdi mdi-account-group-outline"></span> Communities</a></li>
+                    <li class="nav-spacer"></li>
+                    <li><a href="#"><span class="mdi mdi-cog"></span> Settings</a></li>
+                    <li><a href="#"><span class="mdi mdi-help-box"></span> Support</a></li>
+                    <li><a href="#"><span class="mdi mdi-shield-check"></span> Privacy</a></li>
+                </ul>
+            </nav>
+        </aside>
+            
+        <!-- HEADER PANEL -->
+        <header class="mainHeader">
+            <div class="header-row header-top">
+                <div class="searchGroup">
+                    <span class="mdi mdi-magnify"></span>             
+                    <input type="text" id="siteSearch" name="search" placeholder="Search...">
+                </div>
+                
+                <div class="notifications">
+                    <span class="mdi mdi-bell-ring"></span> 
+                    <span class="mdi mdi-account-circle avatar-small"></span>      
+                    <span class="accountName">Morgan Oakley</span>
+                </div>
+            </div> 
+            
+            <div class="header-row header-bottom">
+                <div class="greetings">
+                    <div class="userInfo">
+                        <span class="mdi mdi-account-circle avatar-large"></span>
+                    </div>
+                    <div class="greetingText">
+                        <p>Hi there,</p>
+                        <h2>Morgan Oakley (@morgan)</h2>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT CONTENT -->
+        <main class="mainContent">
+            
+            <!-- PROJECTS SECTION -->
+            <section class="projectCardsContent">
+                <h3 class="sectionTitle">Your projects</h3>
+                <div class="cardsContainer">
+                    
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        <div class="card-icons">
+                            <span class="mdi mdi-star-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Less Cool Project</h3>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <div class="card-icons">
+                            <span class="mdi mdi-star-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        <div class="card-icons">
+                            <span class="mdi mdi-star-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        <div class="card-icons">
+                            <span class="mdi mdi-star-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ad Blocker</h3> 
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <div class="card-icons">
+                            <span class="mdi mdi-star-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>     
+                    </div>
+
+                    <div class="card">
+                        <h3>Money Maker</h3>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        <div class="card-icons">
+                            <span class="mdi mdi-star-outline"></span>
+                            <span class="mdi mdi-eye-plus"></span>
+                            <span class="mdi mdi-source-fork"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- RIGHT PANEL WIDGETS -->
+            <div class="rightWidgetsPanel">
+                
+                <!-- ANNOUNCEMENTS SECTION -->
+                <section class="announcementActivities">
+                    <h3 class="sectionTitle">Announcements</h3>
+                    <div class="widgetCard">
+                        <div class="activityFeed">
+                            <h3>Site Maintenance</h3>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                        </div>
+
+                        <div class="activityFeed">
+                            <h3>Community Share Day</h3>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                        </div>
+
+                        <div class="activityFeed">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TRENDING SECTION -->
+                <section class="trendingTopics">
+                    <h3 class="sectionTitle">Trending</h3>
+                    <div class="widgetCard trendingContainer">
+                        
+                        <div class="trendingUser">
+                            <span class="mdi mdi-account-circle trendingAvatar user-t"></span>
+                            <div class="trendingText">
+                                <h3>@tegan</h3>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+
+                        <div class="trendingUser">
+                            <span class="mdi mdi-account-circle trendingAvatar user-m"></span>
+                            <div class="trendingText">
+                                <h3>@morgan</h3>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+
+                        <div class="trendingUser">
+                            <span class="mdi mdi-account-circle trendingAvatar user-k"></span>
+                            <div class="trendingText">
+                                <h3>@kendall</h3>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+
+                        <div class="trendingUser">
+                            <span class="mdi mdi-account-circle trendingAvatar user-a"></span>
+                            <div class="trendingText">
+                                <h3>@alex</h3>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

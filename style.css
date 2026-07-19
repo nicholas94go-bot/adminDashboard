@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-blue: #1992d4;
+    --accent-yellow: #f0b429;
+    --bg-gray: #e2e8f0;
+    --card-white: #ffffff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --accent-orange: #f59e0b;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    min-height: 100vh;
+
+    
+    resize: both;
+    overflow: auto;
+}
+
+body {
+    background-color: var(--bg-gray);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--primary-blue);
+    color: var(--card-white);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--card-white);
+    list-style-type: none;
+
+}
+  
+.sidebarNav a {
+    text-decoration: none;
+    color: var(--card-white);
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    padding: 10px 20px;
+    display: block;
+
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+.logo div {
+    font-weight: bold;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--card-white);
+    padding: 16px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    z-index: 5;
+    
+}
+
+header {
+    padding: 10px;
+}
+
+.header-top,
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--card-white);
+
+    width: 100%;
+    padding: 30px 15px 15px 10px;
+    border-radius: 5px;
+}
+
+
+.userInfo{
+    display: flex;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: right;
+    
+    
+}
+button {
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    border: none;
+    color: var(--card-white);
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.greetings {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.mainContent {
+    grid-area: main;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    align-items: start;
+    gap: 30px;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+}
+
+
+
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    gap: 24px;
+    
+
+}
+.card {
+    background-color: var(--card-white);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 8px solid var(--accent-orange);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.announcementActivities {
+    display: grid;
+    background-color: var(--card-white);
+    grid-area: 1 / 5 / 3 /6;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.widgetCard {
+    background-color: var(--card-white);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.activityFeed {
+    padding: 14px 0;
+}
+
+.activityFeed:first-child {
+    padding-top: 0;
+}
+
+.activityFeed:not(:last-child) {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.activityFeed h3 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.activityFeed p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+.user-t {
+     color: #f43f5e; 
+}
+.user-m { 
+    color: var(--accent-gold); 
+}
+.user-k { 
+    color: #3b82f6; 
+}
+.user-a { 
+    color: #10b981; 
+}
+
+#siteSearch {
+    background-color: var(--bg-gray);
+    border: none;
+    color: var(--text-dark);
+    padding: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+.searchGroup  {
+    display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the label and input */
+  width: 75%;
+}
+
+.trendingTopics {
+    background-color: var(--card-white);
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: #64748b;
+}
