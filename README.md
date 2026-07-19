@@ -4,7 +4,7 @@ A polished front-end admin dashboard UI built with plain HTML and CSS. The proje
 
 ## Preview
 
-![Admin Dashboard Preview](screenshots/dashboard-preview.svg)
+![Admin Dashboard Preview](screenshots/dashboard-preview.png)
 
 ## Features
 
@@ -18,19 +18,12 @@ A polished front-end admin dashboard UI built with plain HTML and CSS. The proje
 
 - index.html — contains the full dashboard structure and content
 - style.css — defines the visual design, layout, spacing, colors, and responsive behavior
-- screenshots/dashboard-preview.svg — a visual preview image used in this README
+- screenshots/dashboard-preview.png — a visual preview image used in this README
 - README.md — project documentation and setup instructions
 
 ## How to View Locally
 
-You can preview the dashboard in one of these ways:
-
-1. Open index.html directly in your browser, or
-2. Start a local web server from the project folder:
-
-   python3 -m http.server 8000
-
-3. Visit http://localhost:8000 in your browser.
+You can preview the dashboard by Opening index.html directly in your browser
 
 ## Technologies Used
 
