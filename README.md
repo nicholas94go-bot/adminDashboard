@@ -12,7 +12,7 @@ A polished front-end admin dashboard UI built with plain HTML and CSS. The proje
 - A top header with a search bar, notification icons, user profile, and action buttons
 - A grid-based project section featuring multiple cards with descriptive content
 - A right-side panel for announcements and trending users
-- Responsive layout built with CSS Grid and Flexbox for a clean desktop-first experience
+- Responsive layout built with CSS Grid and Flexbox, including a collapsible mobile sidebar
 
 ## Project Structure
 
@@ -38,8 +38,7 @@ This project is a static front-end build, so it does not require a build step or
 ## Future Improvements
 
 Possible enhancements include:
-
+- [x] making the design fully responsive for all screen sizes
 - Adding interactive navigation and dropdown menus
-- Making the layout fully mobile responsive
 - Integrating charts and analytics widgets
 - Converting the design into a React or Vue component-based UI
